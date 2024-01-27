@@ -1,0 +1,26 @@
+.workDescription {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+
+  .workDescription__title {
+    font-size: 25px;
+    margin: 10px 0;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .workDescription__text {
+    margin: 5px 0;
+  }
+
+  .workDescription__repoLink {
+    margin: 10px 0;
+    a {
+      color: #00acee;
+      text-decoration: none;
+    }
+  }
+}
