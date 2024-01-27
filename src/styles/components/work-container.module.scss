@@ -1,0 +1,13 @@
+.workContainer {
+  width: 80%;
+  margin: 0 auto;
+
+  .workContainer__flex {
+    display: flex;
+    margin-bottom: 120px;
+
+    img {
+      margin-right: 45px;
+    }
+  }
+}

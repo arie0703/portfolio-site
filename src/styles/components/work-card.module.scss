@@ -1,0 +1,18 @@
+.workCard {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+
+
+  .workCard__image {
+    object-fit: cover;
+    cursor: pointer;
+
+    &:hover {
+      -webkit-transform: scale(1.08, 1.08);
+      transform: scale(1.08, 1.08);
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+  }
+}

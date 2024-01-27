@@ -1,0 +1,28 @@
+.articleCard {
+  background-color: #2f3232;
+  padding: 16px 24px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #bcbdbd;
+
+  a {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .articleCard__tags {
+    margin-top: 10px;
+
+    span {
+      background-color: #222;
+      padding: 4px 10px;
+      margin-right: 8px;
+      border-radius: 5px;
+      cursor: default;
+    }
+  }
+
+}

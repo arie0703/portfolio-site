@@ -1,0 +1,38 @@
+.about {
+  .about__flex {
+    display: flex;
+    padding: 20px;
+
+    .about__image {
+      margin-right: 15px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .about__name {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .about__introduction {
+      white-space: pre-wrap;
+    }
+
+    .about__links {
+      margin-top: 8px;
+
+      a {
+        margin-right: 15px;
+        color: #aaa;
+        font-size: 1.1rem;
+
+        &:hover {
+          color: #ffaa00;
+        }
+      }
+    }
+  }
+
+}

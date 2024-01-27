@@ -1,0 +1,47 @@
+.contact {
+  margin-bottom: 120px;
+
+  .contact__flex {
+    display: flex;
+    justify-content: center;
+
+    .contact__link {
+      margin: 15px;
+      background-color: #fff;
+      border-radius: 50px;
+
+      a {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 18px 14px 18px 12px;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        height: 60px;
+        width: 220px;
+        letter-spacing: .05em;
+
+        &:hover {
+          opacity: 0.75;
+          transition: 0.2s;
+        }
+      }
+
+      a.contact__facebook {
+        background-color: #0866ff;
+      }
+
+      a.contact__wantedly {
+        background-color: #21bddb;
+      }
+
+      a.contact__email {
+        background-color: #ea4335;
+      }
+    }
+  }
+}

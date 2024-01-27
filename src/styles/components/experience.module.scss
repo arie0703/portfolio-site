@@ -1,0 +1,50 @@
+.experience {
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    // max-width: 700px;
+
+    &::after {
+      // 空の疑似要素を生成し、Flexの並びを左寄せにする
+      content: '';
+      display: block;
+      width: 30%;
+    }
+
+    .experience__card {
+      background-color: #222;
+      margin: 10px 2px;
+      padding: 12px;
+      border-radius: 3px;
+      height: 22rem;
+      width: 30%;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        width: 90%;
+        margin: 10px auto;
+        white-space: pre-wrap;
+      }
+
+      .experience__title {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      .experience__content {
+        font-size: 0.95rem;
+      }
+
+
+    }
+  }
+
+}

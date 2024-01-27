@@ -1,0 +1,22 @@
+.careerCard {
+  background-color: #2f3232;
+  padding: 16px 24px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #bcbdbd;
+
+  .careerCard__period {
+    font-size: 14px;
+    color: #bcbdbd;
+    margin-bottom: 5px;
+  }
+
+  .careerCard__title {
+    font-size: 20px;
+  }
+
+  .careerCard__description {
+    margin-top: 10px;
+  }
+
+}

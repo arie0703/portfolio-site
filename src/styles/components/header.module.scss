@@ -1,0 +1,20 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+
+.header {
+  margin: 0
+}
+
+.header__logo {
+  text-align: center;
+  width: 65%;
+  height: 24vh;
+  margin: 100px auto;
+  user-select: none;
+
+  b {
+    font: 400 15vh "Vibur";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ffaa44, 0 0 0.5em #ffaa44, 0 0 0.1em #ffaa44, 0 10px 3px #000;
+  }
+}
