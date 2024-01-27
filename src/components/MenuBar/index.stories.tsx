@@ -13,5 +13,6 @@ export default meta
 type Story = StoryObj<typeof MenuBar>;
 
 export const Default: Story = {
-  argTypes: {}
+  argTypes: {},
+  args: { items: ['About', 'Skills', 'Works'] }
 }

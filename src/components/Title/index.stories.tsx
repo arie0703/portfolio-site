@@ -12,7 +12,8 @@ export default meta
 type Story = StoryObj<typeof Title>;
 
 export const Default: Story = {
-  argTypes: {}
+  argTypes: {},
+  args: { title: "Title" }
 }
 
 
