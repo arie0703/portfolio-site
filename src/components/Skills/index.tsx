@@ -15,7 +15,7 @@ export const Skills = () => {
         <div className={styles['skills__flex']}>
           {frontendSkills.map((item) => {
             return (
-              <div onClick={() => { setSelectedItem(item) }}>
+              <div key={item.title} onClick={() => { setSelectedItem(item) }}>
                 <Image src={item.image} width={selectedItem ? 30 : 80} height={selectedItem ? 30 : 80} alt={item.title} />
               </div>
             )
@@ -25,7 +25,7 @@ export const Skills = () => {
         <div className={styles['skills__flex']}>
           {devOpsSkills.map((item) => {
             return (
-              <div onClick={() => { setSelectedItem(item) }}>
+              <div key={item.title} onClick={() => { setSelectedItem(item) }}>
                 <Image src={item.image} width={selectedItem ? 30 : 80} height={selectedItem ? 30 : 80} alt={item.title} />
               </div>
             )
@@ -35,7 +35,7 @@ export const Skills = () => {
         <div className={styles['skills__flex']}>
           {cloudSkills.map((item) => {
             return (
-              <div onClick={() => { setSelectedItem(item) }}>
+              <div key={item.title} onClick={() => { setSelectedItem(item) }}>
                 <Image src={item.image} width={selectedItem ? 30 : 80} height={selectedItem ? 30 : 80} alt={item.title} />
               </div>
             )

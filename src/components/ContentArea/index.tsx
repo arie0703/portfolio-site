@@ -19,8 +19,6 @@ export const ContentArea = () => {
       <About />
       <Title title={'Skills'} />
       <Skills />
-      <Title title={'Works'} />
-      <WorkContainer />
       <Title title={'Contact'} />
       <Contact />
     </div>

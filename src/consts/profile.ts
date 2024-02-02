@@ -2,7 +2,7 @@ import { Profile } from "@/types/profile";
 
 export const profile: Profile = {
   name: 'K.A.',
-  introduction: `2022年に求人広告系事業会社のエンジニア職として新卒入社。\n最初の1年はインフラ系の部署でAWSやTerraformを使用したクラウドの構築・保守を経験。\nその後、医療・介護系求人サイトの開発チームに異動し、現在はNext.jsによるフロントエンド開発やパフォーマンス監視等のSRE業務に取り組んでいる。`,
+  introduction: `2022年に求人広告系事業会社のエンジニア職として新卒入社。\n最初の1年はインフラ系の部署でAWSやTerraformを使用したクラウドの構築・保守を経験。\nその後、医療・介護系求人サイトの開発チームに異動し、現在はNext.jsによるフロントエンド開発やパフォーマンス監視, テストの自動化等の業務に取り組んでいる。`,
   links: [
     {
       title: 'GitHub',
