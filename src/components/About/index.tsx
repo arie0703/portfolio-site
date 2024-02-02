@@ -9,7 +9,7 @@ export const About = () => {
     <div className={`${styles['about']}`}>
       <div className={`${styles['about__flex']}`}>
         <div className={`${styles['about__image']}`}>
-          <Image src="/images/sample-profile-icon.jpeg" alt="me" width={200} height={200} />
+          <Image src="/images/profile.jpg" alt="me" width={200} height={200} />
         </div>
         <div className={`${styles['about__profile']}`}>
           <span className={styles['about__name']}>
