@@ -22,7 +22,7 @@ export const About = () => {
             {
               profile.links.map((link) => {
                 return (
-                  <Link href={link.url} target="_blank">
+                  <Link href={link.url} target="_blank" key={link.title}>
                     {link.title}
                   </Link>
                 )
