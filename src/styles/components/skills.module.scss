@@ -68,3 +68,31 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills {
+    .skills__container {
+      margin: 0;
+
+      .skills__flex {
+        img {
+          height: 50px;
+        }
+      }
+    }
+
+    // TODO: レスポンシブでの表示仕様はコンポーネント側で制御できるようにしたい
+    .skills__container.selected {
+      margin-bottom: 0;
+
+      h3 {
+        display: block;
+      }
+    }
+
+    .skills__card {
+      display: none;
+    }
+  }
+
+}

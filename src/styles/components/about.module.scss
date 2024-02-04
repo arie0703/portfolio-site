@@ -36,3 +36,26 @@
   }
 
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    .about__flex {
+      display: block;
+
+      .about__image {
+        margin: 0;
+
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .about__introduction {
+        font-size: 14px;
+      }
+    }
+  }
+}

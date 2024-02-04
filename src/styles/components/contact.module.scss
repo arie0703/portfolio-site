@@ -45,3 +45,21 @@
     }
   }
 }
+
+@media screen and (max-width: 428px) {
+  .contact {
+    .contact__flex {
+      display: block;
+
+      .contact__link {
+        margin: 12px auto;
+        width: 80%;
+
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
