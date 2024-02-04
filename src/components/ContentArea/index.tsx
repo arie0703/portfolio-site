@@ -10,7 +10,7 @@ import { Contact } from '../Contact';
 
 export const ContentArea = () => {
 
-  const items = ['About', 'Skills', 'Works']
+  const items = ['About', 'Skills', 'Contact']
 
   return (
     <div className={styles.switchContent}>
