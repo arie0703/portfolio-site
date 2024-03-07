@@ -49,7 +49,13 @@ export const Work = () => {
           <div className={styles["_flex"]}>
             {(work.previewImages as string[]).map((image) => {
               return (
-                <Image src={image} alt={work.title} width={184} height={328} />
+                <Image
+                  src={image}
+                  alt={work.title}
+                  width={184}
+                  height={328}
+                  key={image}
+                />
               );
             })}
           </div>
