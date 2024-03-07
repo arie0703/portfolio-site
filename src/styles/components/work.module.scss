@@ -1,0 +1,116 @@
+.workContainer {
+  width: 80%;
+  margin-bottom: 100px;
+
+  ._box {
+    display: flex;
+
+    img {
+      margin-right: 45px;
+    }
+
+    img._thumbnail {
+      border-radius: 20px;
+    }
+  }
+
+  ._description {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+
+    ._description__title {
+      font-size: 25px;
+      margin: 10px 0;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    ._description__text {
+      margin: 5px 0;
+    }
+
+    ._description__repoLink {
+      margin: 10px 0;
+      a {
+        color: #00acee;
+        text-decoration: none;
+      }
+    }
+  }
+
+  ._preview {
+    margin-top: 40px;
+
+    ._preview__button {
+      background: none;
+      border: none;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+
+        span {
+          font-size: 14px;
+          padding-left: 4px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    ._flex {
+      display: flex;
+      transition: 0.2s;
+
+      img {
+        margin-right: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workContainer {
+    width: 100%;
+
+    ._box {
+      display: block;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      img._thumbnail {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    ._description {
+      width: 100%;
+      padding: 5px;
+
+      ._description__title {
+        font-size: 20px;
+      }
+
+      ._description__text {
+        font-size: 14px;
+      }
+    }
+
+    ._preview {
+      ._flex {
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}
