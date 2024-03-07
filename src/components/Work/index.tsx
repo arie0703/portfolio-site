@@ -9,7 +9,7 @@ export const Work = () => {
 
   return (
     <div className={styles["workContainer"]}>
-      <div className={styles["_flex"]}>
+      <div className={styles["_box"]}>
         <Image
           className={styles["_thumbnail"]}
           src={work.imagePath}
@@ -18,15 +18,7 @@ export const Work = () => {
           height={200}
         />
         <div className={styles["_description"]}>
-          <p className={styles["_description__title"]}>
-            <a
-              href={work.repositoryUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {work.title}
-            </a>
-          </p>
+          <p className={styles["_description__title"]}>{work.title}</p>
           <div className={styles["_description__text"]}>
             <p>{work.description}</p>
           </div>

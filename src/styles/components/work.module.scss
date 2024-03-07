@@ -1,8 +1,8 @@
 .workContainer {
   width: 80%;
-  margin: 0 auto;
+  margin-bottom: 100px;
 
-  ._flex {
+  ._box {
     display: flex;
 
     img {
@@ -42,7 +42,7 @@
   }
 
   ._preview {
-    margin-top: 60px;
+    margin-top: 40px;
 
     ._preview__button {
       background: none;
@@ -63,7 +63,54 @@
     }
 
     ._flex {
+      display: flex;
       transition: 0.2s;
+
+      img {
+        margin-right: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workContainer {
+    width: 100%;
+
+    ._box {
+      display: block;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      img._thumbnail {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    ._description {
+      width: 100%;
+      padding: 5px;
+
+      ._description__title {
+        font-size: 20px;
+      }
+
+      ._description__text {
+        font-size: 14px;
+      }
+    }
+
+    ._preview {
+      ._flex {
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
     }
   }
 }
