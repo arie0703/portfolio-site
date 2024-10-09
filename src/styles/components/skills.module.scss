@@ -17,16 +17,8 @@
       img {
         width: auto;
         object-fit: cover;
-        cursor: pointer;
         margin-right: 8px;
         transition: 0.2s;
-
-        &:hover {
-          -webkit-transform: scale(1.08, 1.08);
-          transform: scale(1.08, 1.08);
-          -webkit-transition: 0.3s;
-          transition: 0.3s;
-        }
       }
     }
   }
@@ -36,35 +28,6 @@
 
     h3 {
       display: none;
-    }
-  }
-
-  .skills__card {
-
-    .skills__flex {
-      display: flex;
-
-      img {
-        width: auto;
-        object-fit: cover;
-        margin-right: 15px;
-      }
-
-      .skills__card__content {
-        p.skills__card__title {
-          font-size: 1.5rem;
-        }
-
-        p.skills__card__text {
-          margin-top: 10px;
-          white-space: pre-wrap;
-        }
-      }
-
-      .skills__card__close {
-        margin-left: 15px;
-        cursor: pointer;
-      }
     }
   }
 }
@@ -79,19 +42,6 @@
           height: 50px;
         }
       }
-    }
-
-    // TODO: レスポンシブでの表示仕様はコンポーネント側で制御できるようにしたい
-    .skills__container.selected {
-      margin-bottom: 0;
-
-      h3 {
-        display: block;
-      }
-    }
-
-    .skills__card {
-      display: none;
     }
   }
 
