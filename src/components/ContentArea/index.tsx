@@ -8,7 +8,7 @@ import { Title } from "@/components/Title";
 import { Contact } from "../Contact";
 
 export const ContentArea = () => {
-  const items = ["About", "Skills", "Work", "Contact"];
+  const items = ["About", "Skills", "Contact"];
 
   return (
     <div className={styles.switchContent}>
@@ -17,8 +17,6 @@ export const ContentArea = () => {
       <About />
       <Title title={"Skills"} />
       <Skills />
-      <Title title={"Work"} />
-      <Work />
       <Title title={"Contact"} />
       <Contact />
     </div>

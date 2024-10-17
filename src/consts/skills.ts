@@ -1,14 +1,4 @@
-export const frontendSkills = [
-  {
-    title: 'HTML',
-    image: '/images/skills/html.png',
-    description: 'フロントエンド開発において使用。\n',
-  },
-  {
-    title: 'CSS (SASS)',
-    image: '/images/skills/sass.png',
-    description: 'フロントエンド開発において使用。\n'
-  },
+export const languageSkills = [
   {
     title: 'TypeScript',
     image: '/images/skills/typescript.png',
@@ -24,27 +14,17 @@ export const frontendSkills = [
     image: '/images/skills/nextjs.png',
     description: 'フロントエンド開発において使用。\n'
   },
-]
-
-export const devOpsSkills = [
   {
-    title: 'JEST',
-    image: '/images/skills/jest.png',
-    description: 'TypeScriptのプロジェクトにおける単体テストの実装に使用。\n',
+    title: 'Ruby',
+    image: '/images/skills/ruby.svg'
   },
   {
-    title: 'Storybook',
-    image: '/images/skills/storybook.svg',
-    description: 'フロントエンド開発において使用。\nStorybookを用いたVisual Regression Testの導入も経験。'
-  },
-  {
-    title: 'New Relic',
-    image: '/images/skills/newrelic.png',
-    description: 'アプリケーションのパフォーマンス監視に使用。\nチームの朝会で毎回ダッシュボードを共有し、パフォーマンス改善の施策を考えるなどといった活用を進めている。'
+    title: 'Ruby on Rails',
+    image: '/images/skills/rails.png',
   },
 ]
 
-export const cloudSkills = [
+export const infraSkills = [
   {
     title: 'AWS',
     image: '/images/skills/aws.png',
@@ -54,5 +34,10 @@ export const cloudSkills = [
     title: 'Terraform',
     image: '/images/skills/terraform.png',
     description: 'AWSリソースの構築において使用。\nリソースのmodule化などディレクトリ設計も経験。'
+  },
+  {
+    title: 'New Relic',
+    image: '/images/skills/newrelic.png',
+    description: 'アプリケーションのパフォーマンス監視に使用。\nチームの朝会で毎回ダッシュボードを共有し、パフォーマンス改善の施策を考えるなどといった活用を進めている。'
   },
 ]
