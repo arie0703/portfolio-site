@@ -18,7 +18,7 @@ export const ContentArea = () => {
       <About />
       <Title title={"Skills"} />
       <Skills />
-      <Title title={"Archievements"} />
+      <Title title={"Achievements"} />
       <Achievements />
       <Title title={"Contact"} />
       <Contact />
