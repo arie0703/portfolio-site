@@ -31,9 +31,10 @@ export const Achievements = () => {
               <div className={styles["_box"]}>
                 {/* Next Imageは使わない */}
                 <img src={item.image}></img>
+                <p className={styles["_caption"]}>{item.caption}</p>
 
                 <div className={styles["_description"]}>
-                  <p className={styles["_caption"]}>{item.caption}</p>
+                  <p className={styles["_title"]}>{item.title}</p>
                   <ul>
                     {item.experiences.map((exp, index) => {
                       return <li key={index}>{exp}</li>

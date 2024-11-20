@@ -8,15 +8,20 @@
       object-fit: cover;
       max-width: 40vw;
     }
+    ._caption {
+      text-align: center;
+      color: #ddd;
+    }
 
     ._description {
-      ._caption {
+      margin-top: 1em;
+      ._title {
         font-size: 20px;
         margin-bottom: 0.5rem;
       }
 
       li {
-        list-style: none;
+        margin-left: 1.5em;
       }
     }
   }
@@ -146,7 +151,7 @@
         width: 92%;
         margin: 0 auto;
         
-        ._caption {
+        ._title {
           font-size: 18px;
         }
   

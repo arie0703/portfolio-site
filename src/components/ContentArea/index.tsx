@@ -1,7 +1,6 @@
 "use client";
 import styles from "@/styles/components/content-area.module.scss";
 import { MenuBar } from "../MenuBar";
-import { Work } from "../Work";
 import { About } from "../About";
 import { Skills } from "../Skills";
 import { Title } from "@/components/Title";
