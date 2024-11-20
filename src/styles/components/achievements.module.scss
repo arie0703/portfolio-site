@@ -1,0 +1,175 @@
+.achievements-container {
+  width: 80%;
+  margin: 0 auto 5em;
+
+  ._box {
+    img {
+      position: relative;
+      object-fit: cover;
+      max-width: 40vw;
+    }
+
+    ._description {
+      ._caption {
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.carousel-slider {
+  overflow: hidden;
+
+  .carousel-item-list {
+    display: flex;
+
+    .carousel-item {
+      flex: 0 0 100%;
+      min-width: 0;
+      aspect-ratio: 16/9;
+      display: grid;
+      place-content: center;
+    }
+  }
+
+  .carousel-controls {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+
+    button {
+      background: transparent;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      font-size: 15px;
+      padding: 10px;
+
+      &:hover span{
+        cursor: pointer;
+        color: orange;
+        transition: 0.4s;
+      }
+    }
+
+    // Nextボタン
+    .dli-chevron-round-right {
+      margin-left: 1em;
+      display: inline-block;
+      vertical-align: middle;
+      color: #ddd;
+      line-height: 1;
+      position: relative;
+      width: 1em;
+      height: 1em;
+      transform: translateX(-25%) rotate(45deg);
+    }
+    
+    .dli-chevron-round-right::before, .dli-chevron-round-right::after {
+      content: '';
+      position: absolute;
+      background: currentColor;
+      border-radius: 0.1em;
+    }
+    
+    .dli-chevron-round-right::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0.3em;
+    }
+    
+    .dli-chevron-round-right::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 0.3em;
+    }
+
+    // Prevボタン
+    .dli-chevron-round-left {
+      margin-right: 1em;
+      display: inline-block;
+      vertical-align: middle;
+      color: #ddd;
+      line-height: 1;
+      position: relative;
+      width: 1em;
+      height: 1em;
+      transform: translateX(25%) rotate(-135deg);
+    }
+    
+    .dli-chevron-round-left::before, .dli-chevron-round-left::after {
+      content: '';
+      position: absolute;
+      background: currentColor;
+      border-radius: 0.1em;
+    }
+    
+    .dli-chevron-round-left::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 0.3em;
+    }
+    
+    .dli-chevron-round-left::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 0.3em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .achievements-container {
+    width: 100%;
+
+    ._box {
+      display: block;
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 85vw;
+        
+      }
+
+      ._description {
+        width: 92%;
+        margin: 0 auto;
+        
+        ._caption {
+          font-size: 18px;
+        }
+  
+        li {
+          font-size: 14px;
+        }
+      }
+
+      
+      
+    }
+  }
+
+  .carousel-slider {
+    .carousel-item-list {
+      .carousel-item {
+        flex: 0 0 100%;
+        min-width: 90vw;
+        aspect-ratio: 1/1;
+        display: grid;
+        place-content: center;
+      }
+    }
+
+  }
+}
