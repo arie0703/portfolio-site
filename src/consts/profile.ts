@@ -2,7 +2,7 @@ import { Profile } from "@/types/profile";
 
 export const profile: Profile = {
   name: 'K.A.',
-  introduction: `2022年に求人広告系事業会社のエンジニア職として新卒入社。\n最初の1年はインフラ系の部署でAWSやTerraformを使用したクラウドの構築・保守を経験。\nその後、医療・介護系求人サイトの開発チームに異動し、現在はNext.jsによるフロントエンド開発やパフォーマンス監視, テストの自動化等の業務に取り組んでいる。`,
+  introduction: `2022年に人材系企業へWeb開発エンジニアとして新卒入社。\n入社後はTypeScriptでのWebアプリケーション開発や、AWSを用いたインフラ構築・DevOpsを経験。\n現在はフィットネス系企業にてSREとして活動中。`,
   links: [
     {
       title: 'GitHub',
@@ -11,7 +11,11 @@ export const profile: Profile = {
     {
       title: 'Qiita',
       url: 'https://qiita.com/arie0703'
-    }
+    },
+    {
+      title: 'Blog',
+      url: 'https://nomaddiary.hatenablog.com/'
+    },
   ],
   experiences: [
     {

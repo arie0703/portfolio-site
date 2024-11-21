@@ -39,14 +39,14 @@
         background-color: #21bddb;
       }
 
-      a.contact__email {
-        background-color: #ea4335;
+      a.contact__youtrust {
+        background-color: rgb(48, 157, 165);
       }
     }
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 492px) {
   .contact {
     .contact__flex {
       display: block;
