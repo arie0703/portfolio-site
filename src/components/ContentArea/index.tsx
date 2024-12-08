@@ -5,10 +5,10 @@ import { About } from "../About";
 import { Skills } from "../Skills";
 import { Title } from "@/components/Title";
 import { Contact } from "../Contact";
-import { Achievements } from "../Achievements";
+import { Activity } from "../Activity";
 
 export const ContentArea = () => {
-  const items = ["About", "Skills", "Achievements", "Contact"];
+  const items = ["About", "Skills", "Activity", "Contact"];
 
   return (
     <div className={styles.switchContent}>
@@ -17,8 +17,8 @@ export const ContentArea = () => {
       <About />
       <Title title={"Skills"} />
       <Skills />
-      <Title title={"Achievements"} />
-      <Achievements />
+      <Title title={"Activity"} />
+      <Activity />
       <Title title={"Contact"} />
       <Contact />
     </div>
