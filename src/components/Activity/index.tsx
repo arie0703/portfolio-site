@@ -2,7 +2,7 @@
 import styles from "@/styles/components/activity.module.scss";
 import { ContributionValue, GitHubContributionWeeks } from "@/types/contribution";
 import HeatMap from '@uiw/react-heat-map';
-import Tooltip from '@uiw/react-tooltip';
+import { Tooltip } from 'react-tooltip';
 import { useEffect, useState } from "react";
 
 // GitHub APIに送信する情報
@@ -30,8 +30,11 @@ const body = {
 
 export const Activity = () => {
 
-  const [heatmapValue, setHeatmapValue] = useState<ContributionValue[]>([{date: "2023-01-01", count: 0}]);
-
+  const nowDate = new Date();
+  const heatmapStartDate = nowDate.setMonth(nowDate.getMonth() - 4);
+  const [heatmapValue, setHeatmapValue] = useState<ContributionValue[]>([{date: heatmapStartDate.toString(), count: 0}]);
+  const [tooltipData, setTooltipData] = useState<ContributionValue>({date: heatmapStartDate.toString(), count: 0})
+  
   const generateContributionValues = (weeks: GitHubContributionWeeks) => {
     const contributionValues: ContributionValue[] = [];
 
@@ -70,24 +73,26 @@ export const Activity = () => {
   return (
     <div className={styles["activity"]}>
       <HeatMap
-        value={heatmapValue}
-        startDate={new Date("2024-07-01")}
+        value={heatmapValue} 
+        startDate={new Date(heatmapStartDate)}
+        endDate={new Date()}
         panelColors={{
-          0: '#161b22',
-          1: '#0e4429',
+          1: '#161b22',
+          2: '#0e4429',
           3: '#006d32',
           5: '#26a641',
           8: '#39d353'
         }}
         rectRender={(props, data) => {
-          // if (!data.count) return <rect {...props} />;
+          if (!data.count) return <rect {...props} />;
           return (
-            <Tooltip placement="top" content={`count: ${data.count || 0} date: ${data.date}`}>
-              <rect {...props} />
-            </Tooltip>
+            <>
+              <rect data-tooltip-id={`heatmap`} onMouseEnter={() => setTooltipData({...data})} {...props} />
+            </>
           );
         }}
       />
+      <Tooltip id={`heatmap`} content={`count: ${tooltipData.count} date: ${tooltipData.date}`}/>
     </div>
   );
 };
